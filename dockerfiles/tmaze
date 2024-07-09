@@ -18,5 +18,5 @@ RUN echo 'root:password' | chpasswd
 RUN curl https://sh.rustup.rs > rustup.sh
 RUN bash rustup.sh -y
 RUN git clone https://github.com/ur-fault/TMaze.git tmaze
-RUN cargo build --release --manifest-path ./tmaze/Cargo.toml
+RUN ./.cargo/bin/cargo build --release --manifest-path ./tmaze/Cargo.toml
 CMD [ "./tmaze/target/release/tmaze" ]
