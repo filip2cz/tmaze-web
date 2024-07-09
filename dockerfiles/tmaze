@@ -16,5 +16,4 @@ WORKDIR /home/user/
 ENV HOME="/home/user" TERM="xterm" USER="user" SHELL="/bin/bash" EDITOR="vim" LANG="en_US.UTF-8" LC_ALL="C"
 RUN echo 'root:password' | chpasswd
 RUN git clone https://github.com/ur-fault/TMaze.git .
-cargo run
-CMD [ "/bin/bash" ]
+CMD [ "/bin/cargo", "run" ]
