@@ -30,7 +30,6 @@ on:
         description: 'Upload GitHub release'
         required: true
         default: false
-  push:
 
 jobs:
 
